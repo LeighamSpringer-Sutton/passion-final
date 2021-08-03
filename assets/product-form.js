@@ -15,7 +15,7 @@ class ProductForm extends HTMLElement {
 
     submitButton.setAttribute("disabled", true);
     submitButton.classList.add("loading");
-    console.log("THIS IS WORKING");
+
     const body = JSON.stringify({
       ...JSON.parse(serializeForm(this.form)),
       sections: this.cartNotification
